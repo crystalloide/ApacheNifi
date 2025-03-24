@@ -1,17 +1,15 @@
 
 ![iFi Expression Language](https://github.com/InsightByte/ApacheNifi/blob/main/NiFi%20Expression%20Language/templates/EL%20Logo.png)
 
-### What is NiFi Expression Language ? 
+### Qu'est-ce que le langage d'expression NiFi ?
 
-Is the ability to reference attributes, compare them to other values, and manipulate their values while they are linked to a flow file.
+Il permet de référencer des attributs, de les comparer à d'autres valeurs et de manipuler leurs valeurs lorsqu'ils sont liés à un fichier de flux.
 
+### Pourquoi avons-nous besoin du langage d'expression NiFi ?
 
-### Why do we need NiFi Expression Language?
+NiFi est très riche en attributs présents dans tous les fichiers de flux, et ces derniers constituent le composant principal de nifi.
 
- NiFi is very rich in attributes that are present in all Flow files and the flow files are the core componenet of nifi. 
-
-
-### How do we use this Expresion Language ? 
+### Comment utiliser ce langage d'expression ?
 
 It always starts with a dollar sign and an opening curly brace(```“${“```) and ends with a closing curly brace(```“}”```). The first variable would be either an ```attribute``` from the ```FlowFile(first priority)``` or from the ```Variable Registry```. Then we can add a colon and a function. 
 #### Example: 
